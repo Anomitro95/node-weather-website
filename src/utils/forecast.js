@@ -1,4 +1,4 @@
-const request = require('postman-request')
+const request = require('request')
 
 const forecast = (data,callback)=>{
     const weatherStackURL ='http://api.weatherstack.com/current?access_key=f7f073413aed8f0d3575db139c5defc2&query='+encodeURIComponent(data.latitude)+','+encodeURIComponent(data.longitude)

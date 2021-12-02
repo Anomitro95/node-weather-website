@@ -39,8 +39,9 @@ weatherForm.addEventListener('submit',(e)=>{
             if(data.error) { 
                 messageOne.textContent=data.error
                 //messageOne.textContent=''
-            }else{
-                messageOne.textContent='The temperature for the location ' + data.location + ' is : ' + data.forecast.temperature + ' but feels like : ' + data.forecast.feelslike
+            }else
+            {
+                messageTwo.textContent='The temperature for the location ' + data.location + ' is : ' + data.forecast
             }
     })    
 

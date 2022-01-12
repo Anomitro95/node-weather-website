@@ -8,7 +8,7 @@ const forecast = (data,callback)=>{
         }else if(response.body.error){
             callback("unable to find location", undefined)
         }else {
-            callback('The location is : '+data.location +'. /nCurrent weather is : ' +response.body.current.weather_descriptions + '. It is currently ' + (response.body.current.is_day === 'yes'?'Day Time':'Night Time')  + '. The temperature is '+response.body.current.temperature+' and feels like '+ response.body.current.feelslike +'. The humidity is :'+ response.body.current.humidity, undefined)
+            callback('The location is : '+data.location +'. \nCurrent weather is : ' +response.body.current.weather_descriptions + '. It is currently ' + (response.body.current.is_day === 'yes'?'Day Time':'Night Time')  + '. The temperature is '+response.body.current.temperature+' and feels like '+ response.body.current.feelslike +'. The humidity is :'+ response.body.current.humidity, undefined)
         }
         
 

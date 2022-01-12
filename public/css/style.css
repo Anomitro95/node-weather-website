@@ -34,7 +34,8 @@ header a{
 }
 
 .myPic {
-    width : 240px;
+    width : 140px;
+    height: 140px;
 }
 
 .main-content {

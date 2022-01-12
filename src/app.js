@@ -25,21 +25,22 @@ app.use(express.static(publicDirectory))
 app.get('',(req,res)=>{
     res.render('index',{
         title :'Weather App',
-        name :'Ricardo'
+        
+        name :'Anomi'
     })
 })
 
 app.get('/about',(req, res)=>{
     res.render('about',{
-        name :'Ricardo Milos'
+        name :'Anomitro Mukherjee'
     })
 })
 
 app.get('/help',(req, res)=>{
     res.render('help', {
-        help :'This is the help page',
-        title :'The white wizard',
-        name : 'Gandalf'
+        help :'Please write your queries to anomitro.mukherjee@trigyn.com',
+        title :'Weather App Help Page',
+        name : 'Anomi'
     })
 })
 

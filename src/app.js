@@ -24,22 +24,22 @@ app.use(express.static(publicDirectory))
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title :'Weather App',
-        
+        title :'Weather App Home',       
         name :'Anomi'
     })
 })
 
 app.get('/about',(req, res)=>{
     res.render('about',{
-        name :'Anomitro Mukherjee'
+        name :'Anomi',
+        title : 'About Page'
     })
 })
 
 app.get('/help',(req, res)=>{
     res.render('help', {
         help :'Please write your queries to anomitro.mukherjee@trigyn.com',
-        title :'Weather App Help Page',
+        title :'Help Page',
         name : 'Anomi'
     })
 })
@@ -91,7 +91,7 @@ app.get('/help/*',(req, res)=>{
     res.render('404',{
         title : '404',
         errorMessage : 'help article not found',
-        name: 'Gandalf'
+        name: 'Anomi'
     })
 })
 
@@ -99,7 +99,7 @@ app.get('*',(req, res)=>{
     res.render('404',{
         title : '404',
         errorMessage : 'page not available for now',
-        name: 'Ricardo'
+        name: 'Anomi'
     })
 })
 
